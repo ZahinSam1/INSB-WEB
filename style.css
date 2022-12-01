@@ -1,7 +1,4 @@
 * {
-  /* z-index: 0; */
-  /* margin: auto; */
-  /* box-sizing: content-box; */
 }
 
 :root {
@@ -14,6 +11,8 @@
   --CardThreeHeight: 35vh;
   --CardThreeWidth: 30vw;
 }
+/* this is for the nav bar start*/
+/* this is for the nav bar end*/
 body {
   z-index: 0;
   /* background-color: white;
@@ -42,7 +41,7 @@ body {
   width: var(--MainCardBGWidth);
   background-color: rgba(55, 50, 50, 0.082);
   border-radius: 20px;
-  
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -67,11 +66,11 @@ body {
   align-items: center;
   justify-content: center;
 }
-.pic{
+.pic {
   border-radius: 50px;
 }
 
-.primaryInfo{
+.primaryInfo {
   display: flex;
   background: rebeccapurple;
   gap: 45%;
@@ -80,38 +79,31 @@ body {
   justify-content: center;
 }
 
-.leftPart{
+.leftPart {
   background: red;
 }
-.myProfileText{
-
+.myProfileText {
 }
-.NameContainer{
-
+.NameContainer {
 }
-.ContactNo{
-
+.ContactNo {
 }
 
-.rightPart{
+.rightPart {
   position: relative;
   background: red;
   right: 0;
 }
-.NsuMail{
-
+.NsuMail {
 }
-.IEEEMail{
-
+.IEEEMail {
 }
-.IEEEId{
-
+.IEEEId {
 }
 
-.editButton{
+.editButton {
   position: relative;
   top: 20%;
-  
 }
 
 .editButton button {
@@ -121,11 +113,10 @@ body {
   border-radius: 40px;
 }
 
-
-.twoThreeContainer{
+.twoThreeContainer {
   position: relative;
   z-index: 3;
-  
+
   display: flex;
   flex-direction: column;
   gap: 31px;
