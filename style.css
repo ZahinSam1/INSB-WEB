@@ -1,0 +1,133 @@
+* {
+  z-index: 0;
+  margin: auto;
+  box-sizing: content-box;
+}
+
+:root {
+  --MainCardBGHeight: 85vh;
+  --MainCardBGWidth: 70vw;
+  --CardOneHeight: 75vh;
+  --CardOneWidth: 30vw;
+  --CardTwoHeight: 35vh;
+  --CardTwoWidth: 30vw;
+  --CardThreeHeight: 35vh;
+  --CardThreeWidth: 30vw;
+}
+body {
+  z-index: 0;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.Container {
+  position: relative;
+  z-index: 0;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+.CardContainer {
+  z-index: 3;
+  position: relative;
+  top: 35vh;
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.MainCardBG {
+  padding: 10px;
+  z-index: 3;
+  position: absolute;
+  height: var(--MainCardBGHeight);
+  width: var(--MainCardBGWidth);
+  background-color: rgba(0, 0, 0, 0.082);
+  border-radius: 20px;
+}
+.CardOne {
+  /* padding: 10px; */
+  z-index: 3;
+  position: absolute;
+  left: -30vh;
+  height: var(--CardOneHeight);
+  width: var(--CardOneWidth);
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 10px 10px 20px 2px #0000003a;
+}
+.picture {
+  max-width: 15vw;
+}
+.pic{
+  border-radius: 50px;
+}
+.CardTwo {
+  /* padding: 10px; */
+  z-index: 3;
+  position: absolute;
+  top: 139px;
+  left: 210px;
+  height: var(--CardTwoHeight);
+  width: var(--CardTwoWidth);
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 10px 10px 20px 2px #0000003a;
+}
+.CardThree {
+  /* padding: 10px; */
+  z-index: 3;
+  position: relative;
+  top: -139px;
+  left: 210px;
+  height: var(--CardTwoHeight);
+  width: var(--CardTwoWidth);
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 10px 10px 20px 2px #0000003a;
+}
+.Design {
+  z-index: 1;
+  position: relative;
+  top: -30vh;
+  left: 10vh;
+  height: auto;
+  width: 100%;
+  display: flex;
+}
+.DesignOne {
+  z-index: 1;
+  position: absolute;
+  top: 180px;
+  left: 500px;
+  height: 10rem;
+  width: 10rem;
+  transform: rotate(145deg);
+  background-image: linear-gradient(rgb(184, 22, 149), rgb(231, 167, 207));
+  border-radius: 20px;
+}
+.DesignTwo {
+  z-index: 1;
+  position: absolute;
+  top: 400px;
+  left: 450px;
+  height: 20rem;
+  width: 20rem;
+  transform: rotate(145deg);
+  background-image: linear-gradient(rgb(216, 50, 75), rgb(255, 147, 98));
+  border-radius: 20px;
+}
+.DesignThree {
+  z-index: 1;
+  position: absolute;
+  top: 450px;
+  left: 100px;
+  height: 15rem;
+  width: 15rem;
+  transform: rotate(145deg);
+  background-image: linear-gradient(rgb(246, 172, 52), rgb(161, 13, 163));
+  border-radius: 20px;
+}
