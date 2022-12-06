@@ -201,6 +201,10 @@ body {
   top: -10px;
   font-size: 22px;
 }
+.myProf{
+  position: relative;
+  top: -25px;
+}
 
 .NameContainer {
   position: relative;
@@ -353,7 +357,7 @@ body {
 .personalInfoContainer{
   padding-left: 20px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr ;
   gap: 20px;
 }
 
@@ -372,8 +376,28 @@ body {
   background-color: #ffffff;
   border-radius: 20px;
   box-shadow: 10px 10px 20px 2px #0000003a;
+  
+}
+.IEEEInfoText{
+  padding-left: 30px;
+  position: relative;
+  top: -12px;
+}
+.IEEEInfoText h1{
+
 }
 
+.IEEE{
+  position: relative;
+  top: -25px;
+}
+
+.IEEEInfoContainer{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding-left: 20px;
+}
 
 /* .Design {
   z-index: 1;
