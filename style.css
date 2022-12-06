@@ -17,14 +17,17 @@
 body {
   font-family: "Ubuntu", sans-serif;
 }
+
 .Navbar {
   width: 100%;
   height: 70px;
-  /* background: red; */
   position: fixed;
   top: 0;
   left: 0;
+
+  z-index: 100;
 }
+
 .top {
   /* background: rebeccapurple; */
   display: flex;
@@ -120,14 +123,10 @@ body {
 }
 
 /* this is for the nav bar end*/
+
 body {
   z-index: 0;
-  /* background-color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center; */
-  overflow: hidden;
-  /* background: red; */
+  /* overflow: hidden; */
 }
 .Container {
   position: relative;
@@ -141,9 +140,9 @@ body {
   z-index: 2;
   position: relative;
 
-  height: auto;
-  width: auto;
-  top: 4.5vh;
+  height: 80vh;
+  width: 70vw;
+  top: 9.5vh;
   height: var(--MainCardBGHeight);
   width: var(--MainCardBGWidth);
   background-color: rgba(55, 50, 50, 0.082);
@@ -153,6 +152,8 @@ body {
   align-items: center;
   justify-content: center;
   gap: 5%;
+
+  overflow: hidden;
 }
 .CardOne {
   padding: 10px;
@@ -160,8 +161,11 @@ body {
   position: relative;
 
   /* left: -30vh; */
-  height: var(--CardOneHeight);
-  width: var(--CardOneWidth);
+  height: auto;
+  height: 87%;
+  /* width: auto; */
+  width: 40%;
+
   background-color: #ffffff;
   border-radius: 20px;
   box-shadow: 10px 10px 20px 2px #0000003a;
@@ -179,43 +183,132 @@ body {
 
 .primaryInfo {
   display: flex;
-  background: rebeccapurple;
-  gap: 45%;
+  contain: layout;
+
   padding: 20px;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center;
+  justify-content: center; */
 }
 
 .leftPart {
-  background: red;
+  position: relative;
+  height: 200px;
+  width: 170px;
+  padding-left: 10px;
 }
 .myProfileText {
+  position: relative;
+  top: -10px;
+  font-size: 22px;
 }
+
 .NameContainer {
+  position: relative;
+  top: -10px;
 }
-.ContactNo {
+
+.name {
+  height: fit-content;
+  width: inherit;
+}
+
+.name p {
+  width: inherit;
+  font-weight: bold;
+  font-size: 16px;
+}
+.displayName {
+  width: inherit;
+  height: fit-content;
+  position: relative;
+  top: -13px;
+}
+.displayName p {
+  width: inherit;
+  height: auto;
+  padding-left: 3px;
+  border-bottom: 1px solid black;
+
+  font-size: 20px;
+  overflow: auto;
+}
+.ContactContainer {
+  position: relative;
+  top: -20px;
+}
+
+.contact p{
+  font-weight: bold;
+}
+
+.displayContact p {
+  position: relative;
+  top: -13px;
+  
+
+  border-bottom: 1px solid black;
 }
 
 .rightPart {
   position: relative;
-  background: red;
-  right: 0;
+
+  width: 170px;
+  height: 200px;
+  left: 40px;
+  top: 50px;
 }
-.NsuMail {
+.NsuMailContainer {
+  position: relative;
+ 
+  top: -10px;
 }
-.IEEEMail {
+.nsuMail{
+  font-weight: bold;
+
 }
-.IEEEId {
+.displayNsuMail p {
+  position: relative;
+  top: -10px;
+  border-bottom: 1px solid black;
+}
+
+.IEEEMailContainer {
+  position: relative;
+ 
+  top: -20px;
+}
+.IEEEMail{
+  font-weight: bold;
+}
+.displayIEEEMail p {
+  position: relative;
+  top: -10px;
+  border-bottom: 1px solid black;
+}
+
+.IEEEIdContainer {
+  position: relative;
+  
+  top: -26px;
+}
+.IEEEId{
+  font-weight: bold;
+}
+.diplayIEEEId p {
+  position: relative;
+  top: -10px;
+  border-bottom: 1px solid black;
 }
 
 .editButton {
   position: relative;
-  top: 20%;
+  padding: 20px;
 }
 
 .editButton button {
   margin-left: 20%;
   width: 100px;
+  height: 30px;
 
   border-radius: 40px;
 }
@@ -229,29 +322,59 @@ body {
   gap: 31px;
 }
 .CardTwo {
-  /* padding: 10px; */
   z-index: 3;
   position: relative;
-  /* top: 139px; */
-  /* left: 210px; */
+
   height: var(--CardTwoHeight);
   width: var(--CardTwoWidth);
   background-color: #ffffff;
   border-radius: 20px;
   box-shadow: 10px 10px 20px 2px #0000003a;
 }
+.PersonalInfo{
+  padding-left: 30px;
+  position: relative;
+  top: -12px;
+}
+.PersonalInfo h1{
+
+}
+.breakLine{
+  width: inherit;
+  height: 2px;
+  background-color: black;
+}
+
+.personal{
+  position: relative;
+  top: -25px;
+}
+
+.personalInfoContainer{
+  padding-left: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.address{
+  position: relative;
+  left: 20px;
+  top: 5px;
+}
+
 .CardThree {
-  /* padding: 10px; */
   z-index: 3;
   position: relative;
-  /* top: -139px; */
-  /* left: 210px; */
+
   height: var(--CardTwoHeight);
   width: var(--CardTwoWidth);
   background-color: #ffffff;
   border-radius: 20px;
   box-shadow: 10px 10px 20px 2px #0000003a;
 }
+
+
 /* .Design {
   z-index: 1;
   position: relative;
@@ -294,3 +417,30 @@ body {
   background-image: linear-gradient(rgb(246, 172, 52), rgb(161, 13, 163));
   border-radius: 20px;
 } */
+
+/* this is for the media query start*/
+@media only screen and (max-width: 768px) {
+  .MainCardBG {
+    flex-direction: column;
+    width: 70vh;
+    height: auto;
+  }
+
+  .CardOne {
+    width: 40vh;
+  }
+  .leftPart {
+    height: 200px;
+    width: 100px;
+    left: -10px;
+  }
+  .rightPart {
+    width: 150px;
+    height: 200px;
+    left: 20px;
+  }
+
+  .picture {
+  }
+}
+/* this is for the media query end*/
