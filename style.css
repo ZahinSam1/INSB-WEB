@@ -29,19 +29,28 @@ body {
 }
 
 .top {
-  /* background: rebeccapurple; */
+  background: black;
+
   display: flex;
   flex-direction: row;
   gap: 100px;
   align-items: center;
+
+  padding-left: 20px;
+  padding-right: 20px;
+  justify-content: space-between;
 }
 
-.applogo {
-  position: inherit;
-  left: 4vw;
+.navLeft {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
 
-  height: auto;
-  width: auto;
+.applogo img {
+  height: 40px;
+  width: 40px;
   /* background: red; */
   cursor: pointer;
 }
@@ -55,21 +64,35 @@ body {
   /* background: red; */
 }
 
+.WelcomeText p {
+  color: #ffffff;
+}
+
+.navRight {
+  position: relative;
+  right: 80px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 30px;
+}
+
 .Icon {
   height: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .notificationIcon {
   height: 30px;
   width: 30px;
   border-radius: 50%;
-  /* background: red; */
-
-  position: absolute;
-
-  left: 78vw;
+  position: relative;
+  color: #ffffff;
+  background: rgba(236, 196, 196, 0.31);
 
   cursor: pointer;
 
@@ -77,49 +100,68 @@ body {
 }
 
 .notificationIcon:hover {
-  background: rgba(128, 128, 128, 0.31);
+  /* background: rgba(236, 196, 196, 0.31); */
+  background-color: #ffffff;
 
   transform: translateZ(3);
 }
 
+.NavProfileImageContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
 .ProfileImage {
   height: 50px;
   width: 50px;
-  background: red;
+  background: white;
 
-  position: absolute;
-  left: 82.8vw;
+  position: relative;
 
   border-radius: 50%;
 }
 
-.Selector {
-  position: inherit;
-  left: 86.5vw;
-
-  height: auto;
-  width: auto;
-
-  display: flex;
-  /* background: red; */
-}
-
 .selectorArrow {
   width: 12px;
-  height: 15px;
+  height: 12px;
   position: relative;
-  left: 2px;
-  top: 2.9px;
-  /* background: red; */
-  transform: rotate(180deg);
 
+  transform: rotate(180deg);
+  font-size: 20px;
+  color: #ffffff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
 }
 
-.selectorArrow:hover {
-  border-width: 0.5px;
-  border-style: solid;
-  border-color: black;
+.selectorArrow h1 {
+  height: 20px;
+  width: 20px;
+  position: inherit;
+}
+
+.selectorArrow b {
+  transition: 1s;
+  /* animation: arrow 1s 250ms infinite; */
+}
+
+.selectorArrow h1:hover {
+  animation: arrow 1s 250ms infinite;
+}
+
+@keyframes arrow {
+  0% {
+    top: -3px;
+  }
+  50% {
+    top: 3px;
+  }
+  100% {
+    top: -3px;
+  }
 }
 
 /* this is for the nav bar end*/
@@ -136,7 +178,8 @@ body {
 }
 
 .MainCardBG {
-  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
   z-index: 2;
   position: relative;
 
@@ -145,7 +188,7 @@ body {
   top: 9.5vh;
   height: var(--MainCardBGHeight);
   width: var(--MainCardBGWidth);
-  background-color: rgba(55, 50, 50, 0.082);
+  /* background-color: rgba(55, 50, 50, 0.082); */
   border-radius: 20px;
 
   display: flex;
@@ -154,6 +197,18 @@ body {
   gap: 5%;
 
   overflow: hidden;
+
+  background: #2193b0; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #6dd5ed,
+    #2193b0
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #6dd5ed,
+    #2193b0
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .CardOne {
   padding: 10px;
@@ -161,10 +216,9 @@ body {
   position: relative;
 
   /* left: -30vh; */
-  height: auto;
-  height: 87%;
+  height: fit-content;
   /* width: auto; */
-  width: 40%;
+  width: auto;
 
   background-color: #ffffff;
   border-radius: 20px;
@@ -201,7 +255,7 @@ body {
   top: -10px;
   font-size: 22px;
 }
-.myProf{
+.myProf {
   position: relative;
   top: -25px;
 }
@@ -231,7 +285,7 @@ body {
   width: inherit;
   height: auto;
   padding-left: 3px;
-  border-bottom: 1px solid black;
+  /* border-bottom: 1px solid black; */
 
   font-size: 20px;
   overflow: auto;
@@ -241,16 +295,15 @@ body {
   top: -20px;
 }
 
-.contact p{
+.contact p {
   font-weight: bold;
 }
 
 .displayContact p {
   position: relative;
   top: -13px;
-  
 
-  border-bottom: 1px solid black;
+  /* border-bottom: 1px solid black; */
 }
 
 .rightPart {
@@ -263,45 +316,44 @@ body {
 }
 .NsuMailContainer {
   position: relative;
- 
+
   top: -10px;
 }
-.nsuMail{
+.nsuMail {
   font-weight: bold;
-
 }
 .displayNsuMail p {
   position: relative;
   top: -10px;
-  border-bottom: 1px solid black;
+  /* border-bottom: 1px solid black; */
 }
 
 .IEEEMailContainer {
   position: relative;
- 
+
   top: -20px;
 }
-.IEEEMail{
+.IEEEMail {
   font-weight: bold;
 }
 .displayIEEEMail p {
   position: relative;
   top: -10px;
-  border-bottom: 1px solid black;
+  /* border-bottom: 1px solid black; */
 }
 
 .IEEEIdContainer {
   position: relative;
-  
+
   top: -26px;
 }
-.IEEEId{
+.IEEEId {
   font-weight: bold;
 }
 .diplayIEEEId p {
   position: relative;
   top: -10px;
-  border-bottom: 1px solid black;
+  /* border-bottom: 1px solid black; */
 }
 
 .editButton {
@@ -315,6 +367,16 @@ body {
   height: 30px;
 
   border-radius: 40px;
+
+  background: #fac400;
+  border: none;
+  transition: 0.6s;
+  font-weight: bold;
+}
+
+.editButton button:hover {
+  background: black;
+  color: #ffffff;
 }
 
 .twoThreeContainer {
@@ -325,46 +387,72 @@ body {
   flex-direction: column;
   gap: 31px;
 }
+
 .CardTwo {
   z-index: 3;
   position: relative;
-
-  height: var(--CardTwoHeight);
-  width: var(--CardTwoWidth);
+  width: auto;
+  height: fit-content;
   background-color: #ffffff;
   border-radius: 20px;
   box-shadow: 10px 10px 20px 2px #0000003a;
+  padding-bottom: 15px;
 }
-.PersonalInfo{
+.PersonalInfo {
   padding-left: 30px;
   position: relative;
   top: -12px;
 }
-.PersonalInfo h1{
-
+.PersonalInfo h1 {
 }
-.breakLine{
+.breakLine {
   width: inherit;
   height: 2px;
   background-color: black;
 }
 
-.personal{
+.personal {
   position: relative;
   top: -25px;
 }
 
-.personalInfoContainer{
+.personalInfoContainer {
   padding-left: 20px;
   display: grid;
-  grid-template-columns: 1fr 1fr ;
+  grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
 
-.address{
-  position: relative;
-  left: 20px;
-  top: 5px;
+.personalInfoContainer p:nth-child(2n-1) {
+  font-weight: bold;
+}
+
+.personalInfoContainer p:nth-child(2n) {
+  border-bottom: 2px solid;
+}
+
+.DOB p {
+  display: inline;
+}
+
+.Gender p {
+  display: inline;
+}
+
+.Major p {
+  display: inline;
+}
+
+.Joining-Session p {
+  display: inline;
+}
+
+.address {
+  height: auto;
+  width: inherit;
+}
+.address p {
+  display: inline;
 }
 
 .CardThree {
@@ -372,31 +460,49 @@ body {
   position: relative;
 
   height: var(--CardTwoHeight);
-  width: var(--CardTwoWidth);
+  width: auto;
   background-color: #ffffff;
   border-radius: 20px;
   box-shadow: 10px 10px 20px 2px #0000003a;
-  
 }
-.IEEEInfoText{
+.IEEEInfoText {
   padding-left: 30px;
   position: relative;
   top: -12px;
 }
-.IEEEInfoText h1{
-
+.IEEEInfoText h1 {
 }
 
-.IEEE{
+.IEEE {
   position: relative;
   top: -25px;
 }
 
-.IEEEInfoContainer{
+.IEEEInfoContainer {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
   padding-left: 20px;
+}
+.IEEEInfoContainer p:nth-child(n) {
+  display: inline;
+}
+.IEEEInfoContainer p:nth-child(2n-1) {
+  font-weight: bold;
+}
+
+.IEEEInfoContainer p:nth-child(2n) {
+  border-bottom: 2px solid black;
+}
+
+.Team-name {
+}
+.Position {
+}
+.Account-Status {
+}
+
+.Renewal-Due {
 }
 
 /* .Design {
@@ -451,7 +557,8 @@ body {
   }
 
   .CardOne {
-    width: 40vh;
+    width: auto;
+    height: auto;
   }
   .leftPart {
     height: 200px;
@@ -466,5 +573,20 @@ body {
 
   .picture {
   }
+
+  .editButton {
+    top: 15px;
+    right: 40px;
+  }
+
+  .CardTwo {
+    top: 10px;
+  }
+
+  .personalInfoContainer {
+    grid-template-columns: 1fr;
+    width: fit-content;
+  }
 }
+
 /* this is for the media query end*/
