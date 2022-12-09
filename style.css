@@ -1,5 +1,4 @@
-* {
-}
+* {}
 
 :root {
   --MainCardBGHeight: 85vh;
@@ -11,11 +10,14 @@
   --CardThreeHeight: 35vh;
   --CardThreeWidth: 30vw;
 }
+
 /* this is for the nav bar start*/
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
 
 body {
   font-family: "Ubuntu", sans-serif;
+  background-image: linear-gradient(to right, rgb(27, 96, 139), rgb(16, 146, 206), rgb(194, 220, 245), rgb(255, 255, 255));
+
 }
 
 .Navbar {
@@ -112,6 +114,7 @@ body {
   align-items: center;
   gap: 5px;
 }
+
 .ProfileImage {
   height: 50px;
   width: 50px;
@@ -156,9 +159,11 @@ body {
   0% {
     top: -3px;
   }
+
   50% {
     top: 3px;
   }
+
   100% {
     top: -3px;
   }
@@ -170,11 +175,40 @@ body {
   z-index: 0;
   /* overflow: hidden; */
 }
+
 .Container {
+  z-index: 1;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.mainPage .ieee_background {
+  text-shadow: 10px 10px rgba(118, 153, 201, 0.073);
+  position: absolute;
+  top: 15vh;
+  Right: 5vh;
+  display: flex;
+  font-size: 30vh;
+  font-weight: 700;
+  color: rgba(69, 142, 184, 0.58);
+  /* z-index: 5; */
+  /* rotate: 330deg; */
+}
+
+.mainPage .insb_background {
+  text-shadow: 10px 10px rgba(5, 66, 151, 0.073);
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  top: -12vh;
+  left: 0vh;
+  display: flex;
+  font-size: 20vh;
+  font-weight: 700;
+  color: rgba(53, 125, 167, 0.58);
+  /* z-index: 5; */
+  /* rotate: 330deg; */
 }
 
 .MainCardBG {
@@ -197,21 +231,25 @@ body {
   gap: 5%;
 
   overflow: hidden;
+  box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.249);
 
-  background: #2193b0; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
+  /* background: #000000;  */
+  /* fallback for old browsers */
+  /* background: -webkit-linear-gradient(
     to right,
-    #6dd5ed,
-    #2193b0
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to bottom,
-    #6dd5ed,
-    #2193b0
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    #9a9a9a,
+    #fbfbfba2
+  );  */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right,
+      #ffffff8e,
+      #ffffff74);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+
 .CardOne {
-  padding: 10px;
+  padding: 5px;
+  margin-left: 10px;
   z-index: 3;
   position: relative;
 
@@ -224,6 +262,7 @@ body {
   border-radius: 20px;
   box-shadow: 10px 10px 20px 2px #0000003a;
 }
+
 .picture {
   position: relative;
   /* background: red; */
@@ -231,6 +270,7 @@ body {
   align-items: center;
   justify-content: center;
 }
+
 .pic {
   border-radius: 50px;
 }
@@ -250,11 +290,13 @@ body {
   width: 170px;
   padding-left: 10px;
 }
+
 .myProfileText {
   position: relative;
   top: -10px;
   font-size: 22px;
 }
+
 .myProf {
   position: relative;
   top: -25px;
@@ -275,12 +317,14 @@ body {
   font-weight: bold;
   font-size: 16px;
 }
+
 .displayName {
   width: inherit;
   height: fit-content;
   position: relative;
   top: -13px;
 }
+
 .displayName p {
   width: inherit;
   height: auto;
@@ -290,6 +334,7 @@ body {
   font-size: 20px;
   overflow: auto;
 }
+
 .ContactContainer {
   position: relative;
   top: -20px;
@@ -314,14 +359,17 @@ body {
   left: 40px;
   top: 50px;
 }
+
 .NsuMailContainer {
   position: relative;
 
   top: -10px;
 }
+
 .nsuMail {
   font-weight: bold;
 }
+
 .displayNsuMail p {
   position: relative;
   top: -10px;
@@ -333,9 +381,11 @@ body {
 
   top: -20px;
 }
+
 .IEEEMail {
   font-weight: bold;
 }
+
 .displayIEEEMail p {
   position: relative;
   top: -10px;
@@ -347,9 +397,11 @@ body {
 
   top: -26px;
 }
+
 .IEEEId {
   font-weight: bold;
 }
+
 .diplayIEEEId p {
   position: relative;
   top: -10px;
@@ -390,6 +442,7 @@ body {
 
 .CardTwo {
   z-index: 3;
+  margin-right: 10px;
   position: relative;
   width: auto;
   height: fit-content;
@@ -398,13 +451,15 @@ body {
   box-shadow: 10px 10px 20px 2px #0000003a;
   padding-bottom: 15px;
 }
+
 .PersonalInfo {
   padding-left: 30px;
   position: relative;
   top: -12px;
 }
-.PersonalInfo h1 {
-}
+
+.PersonalInfo h1 {}
+
 .breakLine {
   width: inherit;
   height: 2px;
@@ -451,6 +506,7 @@ body {
   height: auto;
   width: inherit;
 }
+
 .address p {
   display: inline;
 }
@@ -458,6 +514,7 @@ body {
 .CardThree {
   z-index: 3;
   position: relative;
+  margin-right: 10px;
 
   height: var(--CardTwoHeight);
   width: auto;
@@ -465,13 +522,14 @@ body {
   border-radius: 20px;
   box-shadow: 10px 10px 20px 2px #0000003a;
 }
+
 .IEEEInfoText {
   padding-left: 30px;
   position: relative;
   top: -12px;
 }
-.IEEEInfoText h1 {
-}
+
+.IEEEInfoText h1 {}
 
 .IEEE {
   position: relative;
@@ -484,9 +542,11 @@ body {
   gap: 20px;
   padding-left: 20px;
 }
+
 .IEEEInfoContainer p:nth-child(n) {
   display: inline;
 }
+
 .IEEEInfoContainer p:nth-child(2n-1) {
   font-weight: bold;
 }
@@ -495,15 +555,13 @@ body {
   border-bottom: 2px solid black;
 }
 
-.Team-name {
-}
-.Position {
-}
-.Account-Status {
-}
+.Team-name {}
 
-.Renewal-Due {
-}
+.Position {}
+
+.Account-Status {}
+
+.Renewal-Due {}
 
 /* .Design {
   z-index: 1;
@@ -562,19 +620,20 @@ body {
     width: auto;
     height: auto;
   }
+
   .leftPart {
     height: 200px;
     width: 100px;
     left: -10px;
   }
+
   .rightPart {
     width: 150px;
     height: 200px;
     left: 20px;
   }
 
-  .picture {
-  }
+  .picture {}
 
   .editButton {
     top: 15px;
