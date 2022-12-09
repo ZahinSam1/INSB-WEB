@@ -554,9 +554,11 @@ body {
     flex-direction: column;
     width: 70vh;
     height: auto;
+    gap: 20px;
   }
 
   .CardOne {
+    top: 10px;
     width: auto;
     height: auto;
   }
