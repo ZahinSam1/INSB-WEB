@@ -12,25 +12,23 @@
   box-shadow: 10px 10px 20px 2px #0000003a;
 }
 
-.picture {
+/* .picture {
   position: relative;
-  /* background: red; */
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
 
-.pic {
+/* .pic {
   border-radius: 50px;
-}
+} */
 
 .primaryInfo {
   display: flex;
   contain: layout;
 
   padding: 20px;
-  /* align-items: center;
-      justify-content: center; */
+
 }
 
 .leftPart {

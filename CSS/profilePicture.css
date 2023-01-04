@@ -1,4 +1,4 @@
-.profile-pic {
+.picture {
   color: transparent;
   transition: all 0.3s ease;
   display: flex;
@@ -7,10 +7,10 @@
   position: relative;
   transition: all 0.3s ease;
 }
-.profile-pic input {
+.picture input {
   display: none;
 }
-.profile-pic img {
+.picture img {
   position: absolute;
   object-fit: cover;
   width: 165px;
@@ -19,12 +19,12 @@
   border-radius: 100px;
   z-index: 0;
 }
-.profile-pic .-label {
+.picture .-label {
   cursor: pointer;
   height: 165px;
   width: 165px;
 }
-.profile-pic:hover .-label {
+.picture:hover .-label {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,7 +35,7 @@
   border-radius: 100px;
   margin-bottom: 0;
 }
-.profile-pic span {
+.picture span {
   display: inline-flex;
   padding: 0.2em;
   height: 2em;
