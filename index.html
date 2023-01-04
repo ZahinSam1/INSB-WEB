@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="./CSS/CardTwoThree.css" />
     <link rel="stylesheet" href="./CSS/mediaQuery.css" />
     <link rel="stylesheet" href="./CSS/bgDesign.css" />
+    <link rel="stylesheet" href="./CSS/profilePicture.css">
   </head>
 
   <body>
@@ -105,7 +106,12 @@
         <div class="MainCardBG">
           <div class="CardOne">
             <div class="picture">
-              <img src="./images/images.jfif" class="pic" alt="" />
+              <label class="-label" for="file">
+                <span class="glyphicon glyphicon-camera"></span>
+                <span>Change Image</span>
+              </label>
+              <input id="file" type="file" onchange="loadFile(event)" />
+              <img src="./images/images.jfif" class="pic" id="output" alt="" />
             </div>
             <div class="primaryInfo">
               <div class="leftPart">
